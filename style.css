@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+html, body{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9ebee;
+}
+.container{
+    width: 575px;
+    height: 445px;
+    background: #e9ebee;
+    position: absolute;
+}
+.imagem{
+  width: 575px;
+  height: 400px;
+  overflow: hidden;
+  position: absolute;
+}
+.imagem img{
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+}
+.load{
+  width: 100%;
+  height: 100%;
+  background: #e9ebee;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title-image {
+  width: 100px;
+  height: 100px;
+}
+
+.title-image .image {
+  margin-left: 10px;
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+  background-color: #eeeeee;
+  background: linear-gradient(to right, #eeeeee 10%, #dddddd 20%, #eeeeee 40%);
+  animation: image-loading 2s linear infinite;
+  background-size: 800px auto;
+  border-radius: 50%;
+}
+
+@keyframes image-loading {
+  0% {
+    background-position: -800px;
+  }
+  100% {
+    background-position: 800px;
+  }
+}
+.title-content {
+  width: 300px;
+  height: 100px;
+}
+
+.title-content .title-content_content {
+  width: 280px;
+  height: 80px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.title {
+  width: 400px;
+  height: 100px;
+  display: flex;
+}
+
+.line-small {
+  width: 100px;
+  height: 7px;
+  background-color: #eeeeee;
+}
+
+.line-medium {
+  width: 150px;
+  height: 7px;
+  background-color: #eeeeee;
+}
+.line-large-title{
+  width: 50px;
+  height: 7px;
+  background-color: #eeeeee;
+}
+.line-large-content{
+  width: 115%;
+  height: 7px;
+  background-color: #eeeeee;
+}
+.line-large-content-last{
+  width: 150px;
+  height: 7px;
+  background-color: #eeeeeee;
+}
+.line-large {
+  width: 100%;
+  height: 7px;
+  background-color: #eeeeee;
+}
+
+[class*="line"] {
+  animation: loading 2s linear infinite;
+  background: linear-gradient(to right, #eee 8%, #ddd 16%, #eee 30%);
+  background-size: 800px auto;
+}
+
+@keyframes loading {
+  0% {
+    background-position: -800px;
+  }
+  100% {
+    background-position: 800px;
+  }
+}
+.content {
+  width: 400px;
+  height: 200px;
+}
+
+.content .content_content {
+  width: 380px;
+  margin-left: 10px;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 5px;
+}
+
+
+.reacts{
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.like{
+  height: 30px;
+  width: 185px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .2s;
+}
+.allReacts{
+  width: 370px;
+  height: 60px;
+  background: #fff;
+  position: absolute;
+  top: -52px;
+  opacity: 0;
+  visibility: hidden;
+  transition-delay: .5s;
+  transition-duration: .3s;
+  border-radius: 90px;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+.like:hover .allReacts{
+  opacity: 1;
+  visibility: visible;
+  transition-delay: .5s;
+  transition-duration: .2s;
+}
+.allReacts img{
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  transition: .3s;
+  margin: 7px;
+}
+.allReacts img:hover{
+  transform: scale(1.6);
+}
+#likebutton{
+  width: 20px;
+  height: 20px;
+  padding-left: 100px;
+  padding-right: 130px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: absolute;
+}
+#likebutton:hover{
+  background: rgba(219, 219, 219,.4);
+}
+.typeReactLike{
+  font-family: 'Open Sans', sans-serif;
+  color: #616770;
+  position: relative;
+  left: 30px;
+  top: 0px;
+  font-weight: 800;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Fb React</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="imagem">
+				<div class="load">
+					<div class="main">
+						<div class="title">
+							<div class="title-image">
+								<div class="image"></div>
+							</div>
+							<div class="title-content">
+								<div class="title-content_content">
+									<br>
+									<div class="line-medium"></div>
+									<br>
+									<div class="line-large-title"></div>
+								</div>
+							</div>
+						</div>
+						<div class="content">
+							<div class="content_content">
+								<div class="line-large"></div>
+								<br>
+								<div class="line-large-content"></div>
+								<br>
+								<div class="line-large-content-last"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<img class="loadImg" src="http://hdqwalls.com/wallpapers/small-memory-lp.jpg" alt="">
+			</div>
+			<div class="reacts">
+				<div class="like">
+					<img id="likebutton" src="like.png" alt="">
+					<div class="allReacts">
+						<img class="likeBtn" src="like.gif" alt="" onclick="changeImage('liked.png')">
+						<img class="amei" src="amei.gif" alt="" onclick="changeImage('https://i.imgur.com/y7qZQS3.png')">
+						<img class="haha" src="haha.gif" alt="" onclick="changeImage('https://i.imgur.com/eq69HEz.png')">
+						<img class="uau" src="uau.gif" alt="" onclick="changeImage('https://i.imgur.com/XQSbgpw.png')">
+						<img class="sad" src="sad.gif" alt="" onclick="changeImage('https://i.imgur.com/JlQiyAu.png')">
+						<img class="grr" src="grr.gif" alt="" onclick="changeImage('https://i.imgur.com/P4Xm6Ds.png')">
+					</div>
+					<p class="typeReactLike" id="typeReactLikeID">Curtir</p>
+				</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="reactions.js"></script>
+		<script>
+			window.addEventListener("load", function() {
+			$('.loadImg').show().css("z-index", "2");
+			$('.load').hide();
+			$('.reacts').css("display", "flex");
+			});
+		</script>
+	</body>
+</html>
