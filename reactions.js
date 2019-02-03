@@ -1,4 +1,5 @@
 
+//URLs das reações em png
 var ameiURL = 'https://i.imgur.com/y7qZQS3.png';
 var hahaURL = 'https://i.imgur.com/eq69HEz.png';
 var uauURL = 'https://i.imgur.com/XQSbgpw.png';
@@ -8,28 +9,28 @@ var grrURL = 'https://i.imgur.com/P4Xm6Ds.png';
 //se já estiver like ele volta para o normal
 //se não ele da o like
 $(".typeReactLike").on('click', function() {
-    if ($("#likebutton").attr('src') === 'liked.png' || $("#likebutton").attr('src') === ameiURL || $("#likebutton").attr('src') === hahaURL || $("#likebutton").attr('src') === uauURL) {
-        document.getElementById("likebutton").src = 'like.png';
+    if ($("#likebutton").attr('src') === 'https://i.imgur.com/c3cuy55.png' || $("#likebutton").attr('src') === ameiURL || $("#likebutton").attr('src') === hahaURL || $("#likebutton").attr('src') === uauURL) {
+        document.getElementById("likebutton").src = 'https://i.imgur.com/kmtdDZR.png';
         $('.typeReactLike').css("color", "#646770");
         document.getElementById('typeReactLikeID').innerHTML = 'Curtir';
     } else if ($("#likebutton").attr('src') === sadURL || $("#likebutton").attr('src') === grrURL) {
-        document.getElementById("likebutton").src = 'like.png';
+        document.getElementById("likebutton").src = 'https://i.imgur.com/kmtdDZR.png';
         $('.typeReactLike').css("color", "#646770");
         document.getElementById('typeReactLikeID').innerHTML = 'Curtir';
     } else {
-        document.getElementById("likebutton").src = 'liked.png';
+        document.getElementById("likebutton").src = 'https://i.imgur.com/c3cuy55.png';
         $('.typeReactLike').css("color", "#0081ff");
         document.getElementById('typeReactLikeID').innerHTML = 'Curtir';
     }
 });
 //mesma coisa só que com o icone de like
 $("#likebutton").on('click', function() {
-    if ($("#likebutton").attr('src') === 'liked.png') {
-        document.getElementById("likebutton").src = 'like.png';
+    if ($("#likebutton").attr('src') === 'https://i.imgur.com/c3cuy55.png') {
+        document.getElementById("likebutton").src = 'https://i.imgur.com/kmtdDZR.png';
         $('.typeReactLike').css("color", "#646770");
         document.getElementById('typeReactLikeID').innerHTML = 'Curtir';
     } else {
-        document.getElementById("likebutton").src = 'liked.png';
+        document.getElementById("likebutton").src = 'https://i.imgur.com/c3cuy55.png';
         $('.typeReactLike').css("color", "#0081ff");
         document.getElementById('typeReactLikeID').innerHTML = 'Curtir';
     }
