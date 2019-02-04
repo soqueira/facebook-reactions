@@ -37,18 +37,42 @@
 				</div>
 				<img class="loadImg" src="http://hdqwalls.com/wallpapers/small-memory-lp.jpg" alt="">
 			</div>
+      <div class="likes_quant">
+        <div class="reactions_like">
+          <p id="qnt"></p>
+          <img id="quant_reaction" src="https://i.imgur.com/c3cuy55.png" alt="">
+        </div>
+      </div>
 			<div class="reacts">
 				<div class="like">
-					<img id="likebutton" src="https://i.imgur.com/kmtdDZR.png" alt="">
+					<img id="likebutton"  src="https://i.imgur.com/kmtdDZR.png" alt="">
 					<div class="allReacts">
-						<img class="likeBtn" src="img/like.gif" alt="" onclick="changeImage('https://i.imgur.com/c3cuy55.png')">
-						<img class="amei" src="img/amei.gif" alt="" onclick="changeImage('https://i.imgur.com/y7qZQS3.png')">
-						<img class="haha" src="img/haha.gif" alt="" onclick="changeImage('https://i.imgur.com/eq69HEz.png')">
-						<img class="uau" src="img/uau.gif" alt="" onclick="changeImage('https://i.imgur.com/XQSbgpw.png')">
-						<img class="sad" src="img/sad.gif" alt="" onclick="changeImage('https://i.imgur.com/JlQiyAu.png')">
-						<img class="grr" src="img/grr.gif" alt="" onclick="changeImage('https://i.imgur.com/P4Xm6Ds.png')">
+            <span class="spanlike">
+              <p>Like</p>
+						<img class="likeBtn animation" src="gif/like.gif" alt="" onclick="changeImage('https://i.imgur.com/c3cuy55.png')">
+            </span>
+            <span class="spanAmei">
+              <p>Love</p>
+						<img class="amei animation" src="gif/amei.gif" alt="" onclick="changeImage('https://i.imgur.com/y7qZQS3.png')">
+          </span>
+          <span class="spanHaha">
+            <p>Haha</p>
+						<img class="haha animation" src="gif/haha.gif" alt="" onclick="changeImage('https://i.imgur.com/eq69HEz.png')">
+          </span>
+            <span class="spanUau">
+              <p>Wow</p>
+						<img class="uau animation" src="gif/uau.gif" alt="" onclick="changeImage('https://i.imgur.com/XQSbgpw.png')">
+          </span>
+            <span class="spanSad">
+              <p>Sad</p>
+						<img class="sad animation" src="gif/sad.gif" alt="" onclick="changeImage('https://i.imgur.com/JlQiyAu.png')">
+          </span>
+              <span class="spanGrr">
+                <p>Angry</p>
+						<img class="grr animation" src="gif/grr.gif" alt="" onclick="changeImage('https://i.imgur.com/P4Xm6Ds.png')">
+          </span>
 					</div>
-					<p class="typeReactLike" id="typeReactLikeID">Curtir</p>
+					<p class="typeReactLike" id="typeReactLikeID">Like</p>
 				</div>
 			</div>
 		</div>
@@ -59,7 +83,22 @@
 			$('.loadImg').show().css("z-index", "2");
 			$('.load').hide();
 			$('.reacts').css("display", "flex");
+      $('.likes_quant').css("display", "flex");
 			});
 		</script>
+    <script>
+    $('.typeReactLike').mouseover(function() {
+      $('#likebutton').css('background-color', 'rgba(219, 219, 219,.4)');
+  });
+  $('.typeReactLike').mouseout(function() {
+  $('#likebutton').css('background-color', '#ffffff');
+  });
+  $('#likebutton').mouseover(function() {
+    $('#likebutton').css('background-color', 'rgba(219, 219, 219,.4)');
+});
+$('#likebutton').mouseout(function() {
+$('#likebutton').css('background-color', '#ffffff');
+});
+    </script>
 	</body>
 </html>
