@@ -1,4 +1,4 @@
-html, body{
+html, body {
   height: 100%;
   padding: 0;
   margin: 0;
@@ -7,26 +7,27 @@ html, body{
   align-items: center;
   justify-content: center;
   background: #e9ebee;
+  user-select: none;
 }
-.container{
-    width: 575px;
-    height: 445px;
-    background: #e9ebee;
-    position: absolute;
+.container {
+  width: 575px;
+  height: 445px;
+  background: #e9ebee;
+  position: absolute;
 }
-.imagem{
+.imagem {
   width: 575px;
   height: 400px;
   overflow: hidden;
   position: absolute;
 }
-.imagem img{
+.imagem img {
   width: 100%;
   height: 100%;
   display: none;
   position: absolute;
 }
-.load{
+.load {
   width: 100%;
   height: 100%;
   background: #e9ebee;
@@ -40,7 +41,6 @@ html, body{
   width: 100px;
   height: 100px;
 }
-
 .title-image .image {
   margin-left: 10px;
   width: 80px;
@@ -52,12 +52,10 @@ html, body{
   background-size: 800px auto;
   border-radius: 50%;
 }
-
 @keyframes image-loading {
-  0% {
+  0%{
     background-position: -800px;
-  }
-  100% {
+  }100% {
     background-position: 800px;
   }
 }
@@ -65,42 +63,38 @@ html, body{
   width: 300px;
   height: 100px;
 }
-
 .title-content .title-content_content {
   width: 280px;
   height: 80px;
   margin-top: 10px;
   margin-left: 10px;
 }
-
 .title {
   width: 400px;
   height: 100px;
   display: flex;
 }
-
 .line-small {
   width: 100px;
   height: 7px;
   background-color: #eeeeee;
 }
-
 .line-medium {
   width: 150px;
   height: 7px;
   background-color: #eeeeee;
 }
-.line-large-title{
+.line-large-title {
   width: 50px;
   height: 7px;
   background-color: #eeeeee;
 }
-.line-large-content{
+.line-large-content {
   width: 115%;
   height: 7px;
   background-color: #eeeeee;
 }
-.line-large-content-last{
+.line-large-content-last {
   width: 150px;
   height: 7px;
   background-color: #eeeeeee;
@@ -110,7 +104,6 @@ html, body{
   height: 7px;
   background-color: #eeeeee;
 }
-
 [class*="line"] {
   animation: loading 2s linear infinite;
   background: linear-gradient(to right, #eee 8%, #ddd 16%, #eee 30%);
@@ -118,10 +111,9 @@ html, body{
 }
 
 @keyframes loading {
-  0% {
+  0%{
     background-position: -800px;
-  }
-  100% {
+  }100% {
     background-position: 800px;
   }
 }
@@ -129,7 +121,6 @@ html, body{
   width: 400px;
   height: 200px;
 }
-
 .content .content_content {
   width: 380px;
   margin-left: 10px;
@@ -142,9 +133,7 @@ html, body{
   background-color: white;
   border-radius: 5px;
 }
-
-
-.reacts{
+.reacts {
   width: 100%;
   height: 45px;
   background: #fff;
@@ -154,10 +143,9 @@ html, body{
   justify-content: center;
   align-items: center;
   border-top: 1px solid #e5e5e5;
-      border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
-
-.like{
+.like {
   height: 30px;
   width: 185px;
   display: flex;
@@ -166,7 +154,7 @@ html, body{
   cursor: pointer;
   transition: .2s;
 }
-.allReacts{
+.allReacts {
   width: 370px;
   height: 60px;
   background: #fff;
@@ -185,22 +173,22 @@ html, body{
   transition: .2s;
   transition-delay: .5s
 }
-.like:hover .allReacts{
+.like:hover .allReacts {
   opacity: 1;
   visibility: visible;
   top: -52px;
 }
-.allReacts img{
+.allReacts img {
   width: 45px;
   height: 45px;
   cursor: pointer;
   transition: .3s;
   margin: 7px;
 }
-.allReacts img:hover{
+.allReacts img:hover {
   transform: scale(1.4) translateY(-5px);
 }
-.spanlike p{
+.spanlike p {
   position: absolute;
   opacity: 0;
   visibility: hidden;
@@ -214,12 +202,12 @@ html, body{
   text-align: center;
   border-radius: 17px;
 }
-.spanlike:hover p{
+.spanlike:hover p {
   opacity: 1;
   visibility: visible;
   z-index: 4;
 }
-.spanAmei p{
+.spanAmei p {
   position: absolute;
   opacity: 0;
   visibility: hidden;
@@ -233,12 +221,12 @@ html, body{
   text-align: center;
   border-radius: 17px;
 }
-.spanAmei:hover p{
+.spanAmei:hover p {
   opacity: 1;
   visibility: visible;
   z-index: 4;
 }
-.spanHaha p{
+.spanHaha p {
   position: absolute;
   opacity: 0;
   visibility: hidden;
@@ -252,12 +240,12 @@ html, body{
   text-align: center;
   border-radius: 17px;
 }
-.spanHaha:hover p{
+.spanHaha:hover p {
   opacity: 1;
   visibility: visible;
   z-index: 4;
 }
-.spanUau p{
+.spanUau p {
   position: absolute;
   opacity: 0;
   visibility: hidden;
@@ -271,12 +259,12 @@ html, body{
   text-align: center;
   border-radius: 17px;
 }
-.spanUau:hover p{
+.spanUau:hover p {
   opacity: 1;
   visibility: visible;
   z-index: 4;
 }
-.spanSad p{
+.spanSad p {
   position: absolute;
   opacity: 0;
   visibility: hidden;
@@ -290,12 +278,12 @@ html, body{
   text-align: center;
   border-radius: 17px;
 }
-.spanSad:hover p{
+.spanSad:hover p {
   opacity: 1;
   visibility: visible;
   z-index: 4;
 }
-.spanGrr p{
+.spanGrr p {
   position: absolute;
   opacity: 0;
   visibility: hidden;
@@ -309,12 +297,12 @@ html, body{
   text-align: center;
   border-radius: 17px;
 }
-.spanGrr:hover p{
+.spanGrr:hover p {
   opacity: 1;
   visibility: visible;
   z-index: 4;
 }
-#likebutton{
+#likebutton {
   width: 20px;
   height: 20px;
   padding-left: 100px;
@@ -323,7 +311,7 @@ html, body{
   padding-bottom: 10px;
   position: absolute;
 }
-.typeReactLike{
+.typeReactLike {
   font-family: Helvetica, Sans-Serif;
   color: #616770;
   position: relative;
@@ -333,24 +321,56 @@ html, body{
 }
 .likes_quant {
   width: 100%;
-background: #fff;
-height: 31px;
-position: relative;
-top: 399px;
-display: none;
-flex-direction: row;
-align-items: center;
+  background: #fff;
+  height: 31px;
+  position: relative;
+  top: 399px;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  transition-delay: 10s;
 }
-.reactions_like img{
+.reactions_like img {
   width: 24px;
   height: 24px;
   margin-left: 5px;
 }
-.reactions_like p{
+.reactions_like p {
   position: absolute;
   left: 35px;
-      top: -7px;
-text-align: center;
-color: #606770;
-font-size: 14px;
+  top: -7px;
+  text-align: center;
+  color: #606770;
+  font-size: 14px;
+}
+.git {
+  width: 54px;
+  height: 54px;
+  position: fixed;
+  top: 83%;
+  left: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.git i {
+  font-size: 55px;
+  color: #24292e;
+}
+.git p {
+  color: #24292e;
+  font-size: 13px;
+  position: absolute;
+  top: 38px;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s ease;
+}
+.git:hover p {
+  opacity: 1;
+  visibility: visible;
+  top: 45px;
+}
+.hiddenImg{
+  display: none;
 }

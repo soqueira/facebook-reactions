@@ -1,108 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>facebook reactions</title>
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-	</head>
-	<body>
-		<div class="container">
-			<div class="imagem">
-				<div class="load">
-					<div class="main">
-						<div class="title">
-							<div class="title-image">
-								<div class="image"></div>
-							</div>
-							<div class="title-content">
-								<div class="title-content_content">
-									<br>
-									<div class="line-medium"></div>
-									<br>
-									<div class="line-large-title"></div>
-								</div>
-							</div>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>facebook reactions</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="imagem">
+			<div class="load">
+				<div class="main">
+					<div class="title">
+						<div class="title-image">
+							<div class="image"></div>
 						</div>
-						<div class="content">
-							<div class="content_content">
-								<div class="line-large"></div>
+						<div class="title-content">
+							<div class="title-content_content">
 								<br>
-								<div class="line-large-content"></div>
+								<div class="line-medium"></div>
 								<br>
-								<div class="line-large-content-last"></div>
+								<div class="line-large-title"></div>
 							</div>
 						</div>
 					</div>
+					<div class="content">
+						<div class="content_content">
+							<div class="line-large"></div>
+							<br>
+							<div class="line-large-content"></div>
+							<br>
+							<div class="line-large-content-last"></div>
+						</div>
+					</div>
 				</div>
-				<img class="loadImg" src="http://hdqwalls.com/wallpapers/small-memory-lp.jpg" alt="">
 			</div>
-      <div class="likes_quant">
-        <div class="reactions_like">
-          <p id="qnt"></p>
-          <img id="quant_reaction" src="https://i.imgur.com/c3cuy55.png" alt="">
-        </div>
-      </div>
-			<div class="reacts">
-				<div class="like">
-					<img id="likebutton"  src="https://i.imgur.com/kmtdDZR.png" alt="">
-					<div class="allReacts">
-            <span class="spanlike">
-              <p>Like</p>
+			<img class="loadImg" src="http://hdqwalls.com/wallpapers/small-memory-lp.jpg" alt="">
+		</div>
+		<div class="likes_quant">
+			<div class="reactions_like">
+				<p id="qnt"></p>
+				<img id="quant_reaction" class="hiddenImg" src="">
+			</div>
+		</div>
+		<div class="reacts">
+			<div class="like">
+				<img id="likebutton" src="https://i.imgur.com/kmtdDZR.png" alt="">
+				<div class="allReacts">
+					<span class="spanlike">
+						<p>Like</p>
 						<img class="likeBtn animation" src="gif/like.gif" alt="" onclick="changeImage('https://i.imgur.com/c3cuy55.png')">
-            </span>
-            <span class="spanAmei">
-              <p>Love</p>
+					</span>
+					<span class="spanAmei">
+						<p>Love</p>
 						<img class="amei animation" src="gif/amei.gif" alt="" onclick="changeImage('https://i.imgur.com/y7qZQS3.png')">
-          </span>
-          <span class="spanHaha">
-            <p>Haha</p>
+					</span>
+					<span class="spanHaha">
+						<p>Haha</p>
 						<img class="haha animation" src="gif/haha.gif" alt="" onclick="changeImage('https://i.imgur.com/eq69HEz.png')">
-          </span>
-            <span class="spanUau">
-              <p>Wow</p>
+					</span>
+					<span class="spanUau">
+						<p>Wow</p>
 						<img class="uau animation" src="gif/uau.gif" alt="" onclick="changeImage('https://i.imgur.com/XQSbgpw.png')">
-          </span>
-            <span class="spanSad">
-              <p>Sad</p>
+					</span>
+					<span class="spanSad">
+						<p>Sad</p>
 						<img class="sad animation" src="gif/sad.gif" alt="" onclick="changeImage('https://i.imgur.com/JlQiyAu.png')">
-          </span>
-              <span class="spanGrr">
-                <p>Angry</p>
+					</span>
+					<span class="spanGrr">
+						<p>Angry</p>
 						<img class="grr animation" src="gif/grr.gif" alt="" onclick="changeImage('https://i.imgur.com/P4Xm6Ds.png')">
-          </span>
-					</div>
-					<p class="typeReactLike" id="typeReactLikeID">Like</p>
+					</span>
 				</div>
+				<p class="typeReactLike" id="typeReactLikeID">Like</p>
 			</div>
 		</div>
-		<div class="">
-			
-		</div>
-		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="reactions.js"></script>
-		<script>
-			window.addEventListener("load", function() {
+	</div>
+	<div class="git">
+		<a href="https://github.com/soqueira/facebook-reactions"><i class="fab fa-github"></i></a>
+		<p>soqueira</p>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="reactions.js"></script>
+	<script>
+		window.addEventListener("load", function() {
 			$('.loadImg').show().css("z-index", "2");
 			$('.load').hide();
 			$('.reacts').css("display", "flex");
-      $('.likes_quant').css("display", "flex");
-			});
-		</script>
-    <script>
-    $('.typeReactLike').mouseover(function() {
-      $('#likebutton').css('background-color', 'rgba(219, 219, 219,.4)');
-  });
-  $('.typeReactLike').mouseout(function() {
-  $('#likebutton').css('background-color', '#ffffff');
-  });
-  $('#likebutton').mouseover(function() {
-    $('#likebutton').css('background-color', 'rgba(219, 219, 219,.4)');
-});
-$('#likebutton').mouseout(function() {
-$('#likebutton').css('background-color', '#ffffff');
-});
-    </script>
-	</body>
+			$('.likes_quant').css("display", "flex");
+		});
+	</script>
+	<script>
+	//efeitos de animação no botao de like
+		$('.typeReactLike').mouseover(function() {
+			$('#likebutton').css('background-color', 'rgba(219, 219, 219,.4)');
+		});
+		$('.typeReactLike').mouseout(function() {
+			$('#likebutton').css('background-color', '#ffffff');
+		});
+		$('#likebutton').mouseover(function() {
+			$('#likebutton').css('background-color', 'rgba(219, 219, 219,.4)');
+		});
+		$('#likebutton').mouseout(function() {
+			$('#likebutton').css('background-color', '#ffffff');
+		});
+	</script>
+</body>
+
 </html>
