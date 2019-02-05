@@ -1,9 +1,9 @@
 //URLs das reações em png
-var ameiURL = 'https://i.imgur.com/y7qZQS3.png';
-var hahaURL = 'https://i.imgur.com/eq69HEz.png';
-var uauURL = 'https://i.imgur.com/XQSbgpw.png';
-var sadURL = 'https://i.imgur.com/JlQiyAu.png';
-var grrURL = 'https://i.imgur.com/P4Xm6Ds.png';
+var ameiURL = 'https://i.imgur.com/Z4d86La.png';
+var hahaURL = 'https://i.imgur.com/K23r4ci.png';
+var uauURL = 'https://i.imgur.com/GoWf7Bo.png';
+var sadURL = 'https://i.imgur.com/lujSSPd.png';
+var grrURL = 'https://i.imgur.com/zyayeKC.png';
 //clica no elemento ao lado do icone de like e verifica se ja deu like
 //se já estiver like ele volta para o normal
 //se não ele da o like
@@ -79,8 +79,8 @@ $('.likeBtn').on('click', function() {
 
 //inseri a reação de amei
 $('.amei').on('click', function() {
-  if ($("#likebutton").attr('src') === 'https://i.imgur.com/y7qZQS3.png') {
-    document.getElementById("quant_reaction").src = 'https://i.imgur.com/y7qZQS3.png';
+  if ($("#likebutton").attr('src') === 'https://i.imgur.com/Z4d86La.png') {
+    document.getElementById("quant_reaction").src = 'https://i.imgur.com/Z4d86La.png';
     document.getElementById('qnt').innerHTML = 'Vitor Siqueira';
     $('.container').css("height", "477px");
     $('.hiddenImg').css("display", "block");
@@ -90,8 +90,8 @@ $('.amei').on('click', function() {
 });
 //inseri a reação de haha
 $('.haha').on('click', function() {
-  if ($("#likebutton").attr('src') === 'https://i.imgur.com/eq69HEz.png') {
-    document.getElementById("quant_reaction").src = 'https://i.imgur.com/eq69HEz.png';
+  if ($("#likebutton").attr('src') === 'https://i.imgur.com/K23r4ci.png') {
+    document.getElementById("quant_reaction").src = 'https://i.imgur.com/K23r4ci.png';
     document.getElementById('qnt').innerHTML = 'Vitor Siqueira';
     $('.container').css("height", "477px");
     $('.hiddenImg').css("display", "block");
@@ -101,8 +101,8 @@ $('.haha').on('click', function() {
 });
 //inseri a reação de uau
 $('.uau').on('click', function() {
-  if ($("#likebutton").attr('src') === 'https://i.imgur.com/XQSbgpw.png') {
-    document.getElementById("quant_reaction").src = 'https://i.imgur.com/XQSbgpw.png';
+  if ($("#likebutton").attr('src') === 'https://i.imgur.com/GoWf7Bo.png') {
+    document.getElementById("quant_reaction").src = 'https://i.imgur.com/GoWf7Bo.png';
     document.getElementById('qnt').innerHTML = 'Vitor Siqueira';
     $('.container').css("height", "477px");
     $('.hiddenImg').css("display", "block");
@@ -112,8 +112,8 @@ $('.uau').on('click', function() {
 });
 //inseri a reação de sad
 $('.sad').on('click', function() {
-  if ($("#likebutton").attr('src') === 'https://i.imgur.com/JlQiyAu.png') {
-    document.getElementById("quant_reaction").src = 'https://i.imgur.com/JlQiyAu.png';
+  if ($("#likebutton").attr('src') === 'https://i.imgur.com/lujSSPd.png') {
+    document.getElementById("quant_reaction").src = 'https://i.imgur.com/lujSSPd.png';
     document.getElementById('qnt').innerHTML = 'Vitor Siqueira';
     $('.container').css("height", "477px");
     $('.hiddenImg').css("display", "block");
@@ -123,8 +123,8 @@ $('.sad').on('click', function() {
 });
 //inseri a reação de grr
 $('.grr').on('click', function() {
-  if ($("#likebutton").attr('src') === 'https://i.imgur.com/P4Xm6Ds.png') {
-    document.getElementById("quant_reaction").src = 'https://i.imgur.com/P4Xm6Ds.png';
+  if ($("#likebutton").attr('src') === 'https://i.imgur.com/zyayeKC.png') {
+    document.getElementById("quant_reaction").src = 'https://i.imgur.com/zyayeKC.png';
     document.getElementById('qnt').innerHTML = 'Vitor Siqueira';
     $('.container').css("height", "477px");
     $('.hiddenImg').css("display", "block");
