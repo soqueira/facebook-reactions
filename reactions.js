@@ -12,10 +12,13 @@ $(".typeReactLike").on('click', function() {
     document.getElementById("likebutton").src = 'https://i.imgur.com/kmtdDZR.png';
     $('.typeReactLike').css("color", "#646770");
     document.getElementById('typeReactLikeID').innerHTML = 'Like';
+    // quant_reaction
+    document.getElementById('quant_reaction').src = '';
   } else if ($("#likebutton").attr('src') === sadURL || $("#likebutton").attr('src') === grrURL) {
     document.getElementById("likebutton").src = 'https://i.imgur.com/kmtdDZR.png';
     $('.typeReactLike').css("color", "#646770");
     document.getElementById('typeReactLikeID').innerHTML = 'Like';
+    document.getElementById('quant_reaction').src = '';
   } else {
     document.getElementById("likebutton").src = 'https://i.imgur.com/c3cuy55.png';
     $('.typeReactLike').css("color", "#0081ff");
@@ -28,10 +31,12 @@ $("#likebutton").on('click', function() {
     document.getElementById("likebutton").src = 'https://i.imgur.com/kmtdDZR.png';
     $('.typeReactLike').css("color", "#646770");
     document.getElementById('typeReactLikeID').innerHTML = 'Like';
+    document.getElementById('quant_reaction').src = '';
   } else if ($("#likebutton").attr('src') === sadURL || $("#likebutton").attr('src') === grrURL) {
     document.getElementById("likebutton").src = 'https://i.imgur.com/kmtdDZR.png';
     $('.typeReactLike').css("color", "#646770");
     document.getElementById('typeReactLikeID').innerHTML = 'Like';
+    document.getElementById('quant_reaction').src = '';
   } else {
     document.getElementById("likebutton").src = 'https://i.imgur.com/c3cuy55.png';
     $('.typeReactLike').css("color", "#0081ff");
