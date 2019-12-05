@@ -5,8 +5,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>facebook reactions</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	<link rel="stylesheet" href="dist/css/style.min.css">
+	<script src="https://kit.fontawesome.com/1898093450.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -40,72 +40,29 @@
 			</div>
 			<img class="loadImg" src="http://hdqwalls.com/wallpapers/small-memory-lp.jpg" alt="">
 		</div>
-		<div class="likes_quant">
-			<div class="reactions_like">
-				<p id="qnt"></p>
-				<img id="quant_reaction" class="hiddenImg" src="">
+		<div class="likes-section"><img class="likesSectionImg" src="" alt=""><span>Vitor Siqueira</span></div>
+		<div class="reactions">
+			<div class="likeBtn">
+				<img class="likeReactionImg" src="https://i.imgur.com/DwJTeBK.png" alt=""><span class="ReactionName">Like</span>
+			</div>
+			<div class="reactions--panel">
+				<div class="reaction" data-name='Like' data-balloon-blunt aria-label="Like" data-balloon-pos="up"><img src="gif/like.gif" alt=""></div>
+				<div class="reaction" data-name='Amei' data-balloon-blunt aria-label="Amei" data-balloon-pos="up"><img src="gif/amei.gif" alt=""></div>
+				<div class="reaction" data-name='Haha' data-balloon-blunt aria-label="Haha" data-balloon-pos="up"><img src="gif/haha.gif" alt=""></div>
+				<div class="reaction" data-name='Uau' data-balloon-blunt aria-label="Uau" data-balloon-pos="up"><img src="gif/uau.gif" alt=""></div>
+				<div class="reaction" data-name='Triste' data-balloon-blunt aria-label="Triste" data-balloon-pos="up"><img src="gif/sad.gif" alt=""></div>
+				<div class="reaction" data-name='Grr' data-balloon-blunt aria-label="Grr" data-balloon-pos="up"><img src="gif/grr.gif" alt=""></div>
 			</div>
 		</div>
-		<div class="reacts">
-			<div class="like">
-				<img id="likebutton" src="https://i.imgur.com/kmtdDZR.png" alt="">
-				<div class="allReacts">
-					<span class="spanlike">
-						<p>Like</p>
-						<img class="likeBtn animation" src="gif/like.gif" alt="" onclick="changeImage('https://i.imgur.com/c3cuy55.png')">
-					</span>
-					<span class="spanAmei">
-						<p>Love</p>
-						<img class="amei animation" src="gif/amei.gif" alt="" onclick="changeImage('https://i.imgur.com/Z4d86La.png')">
-					</span>
-					<span class="spanHaha">
-						<p>Haha</p>
-						<img class="haha animation" src="gif/haha.gif" alt="" onclick="changeImage('https://i.imgur.com/K23r4ci.png')">
-					</span>
-					<span class="spanUau">
-						<p>Wow</p>
-						<img class="uau animation" src="gif/uau.gif" alt="" onclick="changeImage('https://i.imgur.com/GoWf7Bo.png')">
-					</span>
-					<span class="spanSad">
-						<p>Sad</p>
-						<img class="sad animation" src="gif/sad.gif" alt="" onclick="changeImage('https://i.imgur.com/lujSSPd.png')">
-					</span>
-					<span class="spanGrr">
-						<p>Angry</p>
-						<img class="grr animation" src="gif/grr.gif" alt="" onclick="changeImage('https://i.imgur.com/zyayeKC.png')">
-					</span>
-				</div>
-				<p class="typeReactLike" id="typeReactLikeID">Like</p>
-			</div>
-		</div>
-	</div>
-	<div class="git">
-		<a href="https://github.com/soqueira/facebook-reactions"><i class="fab fa-github"></i></a>
-		<p>soqueira</p>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-	<script src="reactions.js"></script>
+	<script src="dist/js/reactions.min.js"></script>
 	<script>
 		window.addEventListener("load", function() {
 			$('.loadImg').show().css("z-index", "2");
 			$('.load').hide();
 			$('.reacts').css("display", "flex");
 			$('.likes_quant').css("display", "flex");
-		});
-	</script>
-	<script>
-	//efeitos de animação no botao de like
-		$('.typeReactLike').mouseover(function() {
-			$('#likebutton').css('background-color', 'rgba(219, 219, 219,.4)');
-		});
-		$('.typeReactLike').mouseout(function() {
-			$('#likebutton').css('background-color', '#ffffff');
-		});
-		$('#likebutton').mouseover(function() {
-			$('#likebutton').css('background-color', 'rgba(219, 219, 219,.4)');
-		});
-		$('#likebutton').mouseout(function() {
-			$('#likebutton').css('background-color', '#ffffff');
 		});
 	</script>
 </body>
