@@ -55,14 +55,15 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<script src="dist/js/reactions.min.js"></script>
 	<script>
-		window.addEventListener("load", function() {
-			$('.loadImg').show().css("z-index", "2");
-			$('.load').hide();
-			$('.reacts').css("display", "flex");
-			$('.likes_quant').css("display", "flex");
+		window.addEventListener('load', () => {
+			const loadImg = document.getElementsByClassName('loadImg')[0];
+			const load = document.getElementsByClassName('load')[0];
+			loadImg.classList.add('finish-load');
+			load.style.display = 'none';
+			const reactions = document.getElementsByClassName('reactions')[0];
+			reactions.style.display = 'flex';
 		});
 	</script>
 </body>

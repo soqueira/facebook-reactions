@@ -14,7 +14,7 @@ body {
 .container {
   width: 575px;
   height: 445px;
-  background: #e9ebee;
+  background: #fff;
   position: absolute;
 }
 
@@ -42,7 +42,10 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+.finish-load{
+  display: block !important;
+  z-index: 2;
+}
 .title-image {
   width: 100px;
   height: 100px;
@@ -164,9 +167,11 @@ body {
   height: 10%;
   position: relative;
   top: 90%;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid #aaaa;
+  background: #fff;
 }
 
 .likeBtn {
@@ -250,7 +255,10 @@ body {
   grid-template-columns: 30px 115px;
   justify-content: start;
   align-items: center;
-  margin: 5px;
+  width: 95%;
+  border-bottom: 1px solid #aaaa;
+  left: 1%;
+  padding: 7px;
 }
 
 .likesSectionImg {
