@@ -8,8 +8,8 @@ const browserSync = require('browser-sync').create();
 
 function style() {
   return gulp.src('./src/css/**/*.css')
-    .pipe(cleanCss())
     .pipe(concat('style.min.css'))
+    .pipe(cleanCss())
     .pipe(gulp.dest('./dist/css/'))
 }
 function minJs() {
