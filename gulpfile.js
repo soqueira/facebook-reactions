@@ -33,6 +33,6 @@ function watch() {
 }
 gulp.watch('./src/css/*.css', style).on('change', browserSync.reload);
 gulp.watch('./**/*.html').on('change', browserSync.reload);
-gulp.watch("./src/js/reactions.js").on('change', browserSync.reload);
+gulp.watch("./src/js/*.js", minJs).on('change', browserSync.reload);
 
 gulp.task('default', gulp.series(style, minJs, watch));

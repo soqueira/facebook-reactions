@@ -20,6 +20,7 @@ const GetReaction = index => {
   reactArr.forEach(item => {
     if (item.id === index) {
       setReactions(item.name, item.url);
+      alert(item.name)
     }
   });
 };
