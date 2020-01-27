@@ -119,7 +119,22 @@
           </div>
         </div>
       </div>
-    </div>
+	</div>
+	<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyD1BLqvWbRRfN3kSxnuJZH3trTrVgvd3gg",
+        authDomain: "facebookreactions-ca2c5.firebaseapp.com",
+        databaseURL: "https://facebookreactions-ca2c5.firebaseio.com",
+        projectId: "facebookreactions-ca2c5",
+        storageBucket: "facebookreactions-ca2c5.appspot.com",
+        messagingSenderId: "371549068748",
+        appId: "1:371549068748:web:a72149b7160d378dfed169",
+        measurementId: "G-WZFBXL6DWM"
+      };
+	  firebase.initializeApp(firebaseConfig);
+	  const db = firebase.firestore();
+    </script>
     <script src="dist/js/reactions.min.js"></script>
     <script>
       window.addEventListener("load", () => {
