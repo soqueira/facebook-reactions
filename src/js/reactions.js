@@ -1,11 +1,11 @@
-() => {
+(function() {
   let btns = document.querySelectorAll(".reaction");
   for (let i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", () => {
       GetReaction(i);
     });
   }
-};
+})();
 
 const GetReaction = index => {
   const reactArr = [
@@ -38,7 +38,7 @@ const setReactions = (name, url) => {
   reactionNameSpan.innerHTML = name;
   reactionNameSpan.dataset.name = name;
 };
-() => {
+const like = () => {
   const likesSection = document.getElementsByClassName("likes-section")[0];
   const likeBtn = document.getElementsByClassName("likeBtn")[0];
   likeBtn.addEventListener("click", () => {
@@ -53,3 +53,4 @@ const setReactions = (name, url) => {
     }
   });
 };
+like();
